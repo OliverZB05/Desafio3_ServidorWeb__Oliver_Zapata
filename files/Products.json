@@ -1,0 +1,26 @@
+[
+	{
+		"title": "Silla de oficina",
+		"description": "Silla de oficina en excelente estado",
+		"price": 2000,
+		"thumbnail": "https://i.ibb.co/P9Ytc2W/1-Silla-de-oficina.png",
+		"stock": 20,
+		"id": 1
+	},
+	{
+		"title": "Smartwatch",
+		"description": "reloj digital deportivo",
+		"price": 3000,
+		"thumbnail": "https://i.ibb.co/0rzKD6R/23-Smartwatch.png",
+		"stock": 15,
+		"id": 2
+	},
+	{
+		"title": "Aro de luz led",
+		"description": "Aro de luz perfecto para grabar vídeos y tomar fotos de alta calidad",
+		"price": 2500,
+		"thumbnail": "https://i.ibb.co/HDyLvzT/26-Aro-De-Luz-Led.png",
+		"stock": 15,
+		"id": 3
+	}
+]
