@@ -1,5 +1,4 @@
 import fs from 'fs';
-
 export default class ProductManager {
     constructor(path){
         this.path = path; 
@@ -64,6 +63,9 @@ export default class ProductManager {
         try {
             const products = await this.getProducts();
             const updatedProducts = products.filter(product => product.id !== id);
+            for (let i = 0; i < updatedProducts.length; i++) {
+                updatedProducts[i].id = i + 1;
+            }
             await fs.promises.writeFile(this.path, JSON.stringify(updatedProducts, null, '\t'));
         } catch (error) {
             console.error("error en deleteProductById");
@@ -93,6 +95,9 @@ export default class ProductManager {
         try {
             const products = await this.getProducts();
             const deleteProduct = products.splice((id - 1), 1);
+            for (let i = 0; i < products.length; i++) {
+                products[i].id = i + 1;
+            }
             await fs.promises.writeFile(this.path, JSON.stringify(products, null, '\t'));
         } catch (error) {
             console.error("error en deleteProduct");
